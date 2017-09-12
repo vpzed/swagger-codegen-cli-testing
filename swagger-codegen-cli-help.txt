@@ -1,3 +1,39 @@
+swagger-codegen-cli Help Overview:
+
+Base usage:
+
+$ java -jar swagger-codegen-cli.jar help
+
+----------
+
+usage: swagger-codegen-cli <command> [<args>]
+
+The most commonly used swagger-codegen-cli commands are:
+    config-help   Config help for chosen lang
+    generate      Generate code with chosen lang
+    help          Display help information
+    langs         Shows available langs
+    meta          MetaGenerator. Generator for creating a new template set and configuration for Codegen.  The output will be based on the language you specify, and includes default templates to include.
+    validate      Validate specification
+    version       Show version information
+
+See 'swagger-codegen-cli help <command>' for more information on a specific
+command.
+
+----------
+
+NAME
+        swagger-codegen-cli config-help - Config help for chosen lang
+
+SYNOPSIS
+        swagger-codegen-cli config-help (-l <language> | --lang <language>)
+
+OPTIONS
+        -l <language>, --lang <language>
+            language to get config help for
+
+----------
+
 NAME
         swagger-codegen-cli generate - Generate code with chosen lang
 
@@ -147,4 +183,55 @@ OPTIONS
         -v, --verbose
             verbose mode
 
+----------
 
+NAME
+        swagger-codegen-cli langs - Shows available langs
+
+SYNOPSIS
+        swagger-codegen-cli langs
+
+----------
+
+NAME
+        swagger-codegen-cli meta - MetaGenerator. Generator for creating a new
+        template set and configuration for Codegen. The output will be based on
+        the language you specify, and includes default templates to include.
+
+SYNOPSIS
+        swagger-codegen-cli meta [(-n <name> | --name <name>)]
+                [(-o <output directory> | --output <output directory>)]
+                [(-p <package> | --package <package>)]
+
+OPTIONS
+        -n <name>, --name <name>
+            the human-readable name of the generator
+
+        -o <output directory>, --output <output directory>
+            where to write the generated files (current dir by default)
+
+        -p <package>, --package <package>
+            the package to put the main class into (defaults to
+            io.swagger.codegen)
+
+----------
+
+NAME
+        swagger-codegen-cli validate - Validate specification
+
+SYNOPSIS
+        swagger-codegen-cli validate (-i <spec file> | --input-spec <spec file>)
+
+OPTIONS
+        -i <spec file>, --input-spec <spec file>
+            location of the swagger spec, as URL or file (required)
+
+----------
+
+NAME
+        swagger-codegen-cli version - Show version information
+
+SYNOPSIS
+        swagger-codegen-cli version
+
+----------
